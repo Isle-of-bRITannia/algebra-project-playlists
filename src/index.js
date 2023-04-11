@@ -12,5 +12,5 @@ let testPlaylist2 = ['song 1', 'song 2', 'song 3'];
 const playlists = Playlist.Add(testPlaylist1, testPlaylist2);
 console.log(playlists);
 
-const finalDisplay = display(playlist);
+const finalDisplay = display(playlists);
 document.querySelector('#app').innerHTML = renderDisplay(finalDisplay);

@@ -5,8 +5,8 @@ const display = match({
     Show:  ({playlist}) => {
         return playlist;
     },
-    Add: ({...playlists}) => {
-        let playlist;
+    Add: ({playlists}) => {
+        let playlist = [];
         playlists.forEach(element => {
             playlist = playlist.concat(element);
         });
