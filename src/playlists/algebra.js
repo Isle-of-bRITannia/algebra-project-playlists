@@ -6,6 +6,11 @@ const Alg = {
     add: (...playlists) => ({
         _tag: 'Add',
         playlists
+    }),
+    filter: (filterReq, playlist) => ({
+      _tag: 'Filter',
+      filterReq,
+      playlist  
     })
 };
 
