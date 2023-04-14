@@ -21,7 +21,7 @@ const addDisplay = display(playlists);
 
 // TEST FOR FILTER DUPLICATES
 //const dupliDisplay = display(Playlist.FilterDuplicates(testPlaylist1));
-
+//document.querySelector('#app').innerHTML = renderDisplay(dupliDisplay);
 
 //TEST FOR SORTING BY NUMBER OF PLAYS PER PLAYLIST
 let testPlaylist3 = ['Playlist 1', 1, 7, 'song 1', 'song 2', 'song 3', 'song 1'];

@@ -26,8 +26,8 @@ const display = match({
         return  playlist;
 
     },
-    Filter: ({filterReq, playlist}) => {
+    /*Filter: ({filterReq, playlist}) => {
         return playlist.filter(filterReq);
-    },
+    },*/
 })
 export {display};

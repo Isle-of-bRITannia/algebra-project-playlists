@@ -7,7 +7,7 @@ const Alg = {
         _tag: 'Add',
         playlists
     }),
-    filter: (filterReq, playlist) => ({
+    playlistFilter: (filterReq, playlist) => ({
       _tag: 'Filter',
       filterReq,
       playlist  
