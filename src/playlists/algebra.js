@@ -11,6 +11,11 @@ const Alg = {
       _tag: 'Filter',
       filterReq,
       playlist  
+    }),
+    sort: (sortReq, playlist) => ({
+        _tag: 'Sort',
+        sortReq,
+        playlist
     })
 };
 

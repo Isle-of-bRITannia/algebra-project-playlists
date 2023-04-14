@@ -11,6 +11,12 @@ const display = match({
             playlist = playlist.concat(element);
         });
         return  playlist;
+    },
+    Filter: ({filterReq, playlist}) => {
+        return playlist.filter(filterReq);
+    },
+    Sort: ({sortReq, playlist}) => {
+        return playlist.sort(sortReq);
     }
 })
 export {display};
