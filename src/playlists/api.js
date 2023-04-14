@@ -8,14 +8,11 @@ const API = {
     {
         return API.Filter((value,index) => playlist.indexOf(value) == index);
     },
-    SortByPlays: (playlist) =>
-    {
-
-    },
-    SortByLength: (playlist) =>
-    {
-
-    }
+    PlaylistSort: (index) =>  (...playlists) => {
+        let sortedObject = Alg.playlistSort(...playlists.sort((a, b) => a[index] - b[index]));
+        let sortedArray = [sortedObject.index, ...sortedObject.playlists]; 
+        return sortedArray; 
+    }, 
 };
 
 export {

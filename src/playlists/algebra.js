@@ -12,11 +12,11 @@ const Alg = {
       filterReq,
       playlist  
     }),
-    sort: (sortReq, playlist) => ({
+    playlistSort: (index, ...playlists) => ({
         _tag: 'Sort',
-        sortReq,
-        playlist
-    })
+        index,
+        playlists
+    }),
 };
 
 export {
