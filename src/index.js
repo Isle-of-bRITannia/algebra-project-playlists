@@ -19,6 +19,9 @@ const playlists = Playlist.Add(testPlaylist1, testPlaylist2);
 const addDisplay = display(playlists);
 //document.querySelector('#app').innerHTML = renderDisplay(addDisplay);
 
+// TEST FOR REMOVE
+let removePlaylist = Playlist.RemovePlaylist(testPlaylist, 'song 1');
+
 // TEST FOR FILTER DUPLICATES
 let testPlaylist6 = ['Playlist 1', 1, 7, 'song 1', 'song 2', 'song 3', 'song 1'];
 const dupliDisplay = display(Playlist.FilterDuplicates(testPlaylist6));
@@ -29,4 +32,4 @@ let testPlaylist3 = ['Playlist 1', 1, 7, 'song 1', 'song 2', 'song 3', 'song 1']
 let testPlaylist4 = ['Playlist 2', 2.5, 2, 'song 1', 'song 2', 'song 3'];
 let testPlaylist5 = ['Playlist 3', 2.5, 1, 'song 1', 'song 2', 'song 3'];
 const sortPlaylist = Playlist.PlaylistSort(2)(testPlaylist3, testPlaylist4, testPlaylist5);
-//document.querySelector('#app').innerHTML = renderDisplay(sortPlaylist);
+document.querySelector('#app').innerHTML = renderDisplay(removePlaylist);
