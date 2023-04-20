@@ -2,6 +2,8 @@ import {Playlist} from './playlists/api.js';
 import { display } from './playlists/observe/display.js';
 import { renderDisplay } from './playlists/observe/renderDisplay.js';
 
+// Website Chase used for help: https://levelup.gitconnected.com/7-ways-to-remove-duplicates-from-array-in-javascript-cea4144caf31 
+
 // Order of playlist data: [NAME, DURATION, PLAYS, SONGS...]
 
 let testPlaylist = ['Playlist 1', 1, 5, 'song 1', 'song 2', 'song 3'];
